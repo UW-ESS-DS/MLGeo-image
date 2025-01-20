@@ -30,7 +30,7 @@ git push
 ### Pull your image to run a local JupyterLab session
 ```
 export IMAGE=uwessds/mlgeo-image:latest
-export NAME=ESS590
+export NAME=MLGEO
 docker run -it --name $NAME -p 8888:8888 $IMAGE jupyter lab --ip 0.0.0.0
 docker stop $NAME
 docker rm $NAME
